@@ -55,6 +55,15 @@
         Provides Java17 stuff
         '';
       };
+      docker = {
+        path = ./docker;
+        description = "Docker";
+        welcomeText = ''
+        # A simple docker template
+        Downloads Docker and docker-compose
+        Starts / Stop the daemon
+        '';
+      };
     };
   };
 }
