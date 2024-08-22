@@ -7,18 +7,21 @@
 
   outputs = { self, nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system:
+    let
+      pkgs = import nixpkgs { inherit system; };
+    in
     {
-      devShells.default = nixpkgs.mkShell {
-        packages = with nixpkgs; [
+      devShells.default = pkgs.mkShell {
+        packages = with pkgs; [
           docker
           docker-compose
-          ];
+        ];
 
-          shellHook = ''
-            echo "Starting Docker daemon..."
-            sudo systemctl start docker
-            trap 'echo "Stopping Docker daemon..."; sudo systemctl stop docker' EXIT
-          '';
+        shellHook = ''
+          echo "Starting Docker daemon..."
+          sudo systemctl start docker
+          trap 'echo "Stopping Docker daemon..."; sudo systemctl stop docker' EXIT
+        '';
       };
     });
 }
