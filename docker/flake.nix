@@ -1,5 +1,5 @@
 {
-  description = "A Nix-flake-based Java development environment";
+  description = "A Nix-flake-based Docker development environment";
   inputs = {
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*.tar.gz";
     flake-utils.url = "github:numtide/flake-utils";
