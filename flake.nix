@@ -55,6 +55,22 @@
         Provides Java17 stuff
         '';
       };
+      libgdx21 = {
+        path = ./libgdx21;
+        description = "LibGDX with Java 21";
+        welcomeText = ''
+        # A simple LibGDX template
+        Provides Java21 stuff
+        '';
+      };
+      libgdx17 = {
+        path = ./libgdx17;
+        description = "LibGDX with Java 17";
+        welcomeText = ''
+        # A simple LibGDX template
+        Provides Java17 stuff
+        '';
+      };
     };
   };
 }
