@@ -12,8 +12,9 @@
     in
     {
       devShells.default = pkgs.mkShell {
-        packages = [
-          pkgs.go
+        packages = with pkgs; [
+            ghc
+            cabal-install
         ];
       };
     });
