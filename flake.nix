@@ -55,20 +55,18 @@
         Provides Java17 stuff
         '';
       };
-      libgdx21 = {
-        path = ./libgdx21;
-        description = "LibGDX with Java 21";
+      go = {
+        path = ./go;
+        description = "Go";
         welcomeText = ''
-        # A simple LibGDX template
-        Provides Java21 stuff
+        # A simple Go template
         '';
       };
-      libgdx17 = {
-        path = ./libgdx17;
-        description = "LibGDX with Java 17";
+      haskell = {
+        path = ./haskell;
+        description = "haskell";
         welcomeText = ''
-        # A simple LibGDX template
-        Provides Java17 stuff
+        A simple haskell template
         '';
       };
     };
