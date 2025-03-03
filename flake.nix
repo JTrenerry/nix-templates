@@ -69,6 +69,13 @@
         A simple haskell template
         '';
       };
+      dafny = {
+        path = ./dafny;
+        description = "dafny";
+        welcomeText = ''
+        A simple dafny template
+        '';
+      };
     };
   };
 }
