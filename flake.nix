@@ -69,6 +69,13 @@
         A simple haskell template
         '';
       };
+      npm24 = {
+        path = ./npm24;
+        description = "npm24";
+        welcomeText = ''
+        A simple Node 24 template
+        '';
+      };
       dafny = {
         path = ./dafny;
         description = "dafny";
