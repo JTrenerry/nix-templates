@@ -39,6 +39,13 @@
         Provides GCC and clang
         '';
       };
+      csse4630 = {
+        path = ./csse4630;
+        description = "csse4630";
+        welcomeText = ''
+        # Stuff for CSSE4630
+        '';
+      };
       java21 = {
         path = ./java21;
         description = "Java21";
